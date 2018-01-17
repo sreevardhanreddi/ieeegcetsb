@@ -5,6 +5,7 @@ var path = require('path');
 
 app.get('/',(req,res)=>{
 	res.sendFile(path.join(__dirname + '/index.html'));
+	console.log(req.connection.remoteAddress);
 
 });
 
